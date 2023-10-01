@@ -221,6 +221,7 @@ span.multiple-text {
   animation: floatImage 4s ease-in-out infinite;
   -webkit-clip-path: polygon(50% 0, 90% 16%, 90% 85%, 50% 100%, 11% 85%, 11% 18%);
   clip-path: polygon(50% 0, 90% 16%, 90% 85%, 50% 100%, 11% 85%, 11% 18%);
+  visibility:hidden;
 }
 
 

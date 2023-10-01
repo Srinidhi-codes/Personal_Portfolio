@@ -13,17 +13,6 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
-  <!-- tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style>
-
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -82,9 +71,9 @@
 
       <div>
         <div class="tab-titles">
-          <div class="tab-links present-link" onmouseenter="opentab('skills')">Skills</div>
-          <div class="tab-links" onmouseenter="opentab('experience')">Experience</div>
-          <div class="tab-links" onmouseenter="opentab('education')">Eductaion</div>
+          <div class="tab-links present-link" onclick="opentab('skills')">Skills</div>
+          <div class="tab-links" onclick="opentab('experience')">Experience</div>
+          <div class="tab-links" onclick="opentab('education')">Eductaion</div>
         </div>
         <div class="tab-contents present-tab" id="skills">
           <ul>
@@ -236,20 +225,6 @@
   <!-- custom js -->
   <script src="js/script.js"></script>
 
-  <!-- Tailwind -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </body>
 
 </html>

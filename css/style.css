@@ -52,10 +52,24 @@ section {
 }
 
 .logo {
-  font-size: 4rem;
-  color: var(--text-color);
-  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  font-size: 4.5rem;
+  font-weight: 700;
   cursor: default;
+  color: var(--text-color);
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(102, 140, 253), rgb(130, 130, 234) 50%, rgb(255, 248, 221) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.logo:hover {
+  background-position: 0 100%;
 }
 
 .navbar a {
@@ -115,15 +129,15 @@ section {
 }
 
 .home-img {
-  filter: drop-shadow(3px 25px 16px rgb(47, 247, 250)) !important;
+  filter: drop-shadow(4px 5px 30px rgb(47, 247, 250)) !important;
 }
 
 .home-img1 img {
-  width: 32vw;
-  height: 50vh;
+  width: 27vw;
+  height: 57vh;
   animation: floatImage 4s ease-in-out infinite;
-  -webkit-clip-path: polygon(50% 0, 90% 16%, 90% 85%, 50% 100%, 11% 85%, 11% 18%);
-  clip-path: polygon(50% 0, 90% 16%, 90% 85%, 50% 100%, 11% 85%, 11% 18%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
 }
 
 @keyframes floatImage {
@@ -602,7 +616,6 @@ span.multiple-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -31rem;
   }
 
   .about-content p {

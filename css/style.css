@@ -602,7 +602,7 @@ span.multiple-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 43rem;
+    margin-top: -31rem;
   }
 
   .about-content p {
